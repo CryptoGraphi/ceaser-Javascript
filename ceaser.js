@@ -203,7 +203,6 @@ function unPack(input, MAPSHIFT)
 /**
  *  function:  boomboom
  *  purpose: to crack the encryption using all possible matches
- *  and also display to use probality of the decrypted message being the possible key
  *  
  */
 
