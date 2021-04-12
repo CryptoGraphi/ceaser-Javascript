@@ -10,14 +10,7 @@
 
 
 // declares not to be changed 
-// letters is our string of letters
-// map is a dictionaty map
-// map shift is a new dictionary with the shift applied
-// shift is the shift we want to use on our letters 
 
-
-// these are the settting for the program 
-// inmutable varibles 
 const LETTERS = GetTable(false);
 const MAP = MapKeys(LETTERS);
 const SHIFT = 13;
@@ -67,6 +60,8 @@ function GetTable(filter)
 // tests 
 //GetTable(true);
 //GetTable(false);
+
+
 /*
  *  function: map function 
  * 
@@ -78,7 +73,7 @@ function GetTable(filter)
 
 function MapKeys(input)
 {
-    // create object that kill contain the keys
+
     var map =   { };
 
     for (let i = 0; i < input.length; i++)
@@ -88,64 +83,6 @@ function MapKeys(input)
     }
     return map;
 } 
-
-// tests 
-
-//console.log(MapKeys(GetTable(true)));
-
-/* output:
-  A: 'A',
-  B: 'B',
-  C: 'C',
-  D: 'D',
-  E: 'E',
-  F: 'F',
-  G: 'G',
-  H: 'H',
-  I: 'I',
-  J: 'J',
-  K: 'K',
-  L: 'L',
-  M: 'M',
-  N: 'N',
-  O: 'O',
-  P: 'P',
-  Q: 'Q',
-  R: 'R',
-  S: 'S',
-  T: 'T',
-  U: 'U',
-  V: 'V',
-  W: 'W',
-  X: 'X',
-  Y: 'Y',
-  Z: 'Z',
-  a: 'a',
-  b: 'b',
-  c: 'c',
-  d: 'd',
-  e: 'e',
-  f: 'f',
-  g: 'g',
-  h: 'h',
-  i: 'i',
-  j: 'j',
-  k: 'k',
-  l: 'l',
-  m: 'm',
-  n: 'n',
-  o: 'o',
-  p: 'p',
-  q: 'q',
-  r: 'r',
-  s: 's',
-  t: 't',
-  u: 'u',
-  v: 'v',
-  w: 'w',
-  x: 'x',
-  y: 'y',
-  z: 'z' */
 
 /**
  * 
@@ -208,103 +145,6 @@ function MapShift(currentMap, shift)
 //console.log(MapShift(MAP, SHIFT));
 
 
-/*
-output:
-  '0': '0',
-  '1': '1',
-  '2': '2',
-  '3': '3',
-  '4': '4',
-  '5': '5',
-  '6': '6',
-  '7': '7',
-  '8': '8',
-  '9': '9',
-  ' ': ' ',
-  '!': '!',
-  '"': '"',
-  '#': '#',
-  '$': '$',
-  '%': '%',
-  '&': '&',
-  "'": "'",
-  '(': '(',
-  ')': ')',
-  '*': '*',
-  '+': '+',
-  ',': ',',
-  '-': '-',
-  '.': '.',
-  '/': '/',
-  ':': ':',
-  ';': ';',
-  '<': '<',
-  '=': '=',
-  '>': '>',
-  '?': '?',
-  '@': '@',
-  A: 'N',
-  B: 'O',
-  C: 'P',
-  D: 'Q',
-  E: 'R',
-  F: 'S',
-  G: 'T',
-  H: 'U',
-  I: 'V',
-  J: 'W',
-  K: 'X',
-  L: 'Y',
-  M: 'Z',
-  N: 'A',
-  O: 'B',
-  P: 'C',
-  Q: 'D',
-  R: 'E',
-  S: 'F',
-  T: 'G',
-  U: 'H',
-  V: 'I',
-  W: 'J',
-  X: 'K',
-  Y: 'L',
-  Z: 'M',
-  '[': '[',
-  '\\': '\\',
-  ']': ']',
-  '^': '^',
-  _: '_',
-  '`': '`',
-  a: 'n',
-  b: 'o',
-  c: 'p',
-  d: 'q',
-  e: 'r',
-  f: 's',
-  g: 't',
-  h: 'u',
-  i: 'v',
-  j: 'w',
-  k: 'x',
-  l: 'y',
-  m: 'z',
-  n: 'a',
-  o: 'b',
-  p: 'c',
-  q: 'd',
-  r: 'e',
-  s: 'f',
-  t: 'g',
-  u: 'h',
-  v: 'i',
-  w: 'j',
-  x: 'k',
-  y: 'l',
-  z: 'm',
-  '{': '{',
-  '|': '|',
-  '}': '}',
-  '~': '~'
 
 */
 /**
