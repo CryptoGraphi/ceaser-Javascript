@@ -1,8 +1,8 @@
 /**
  *  --------------------------------------------------------
- *      goal: to  a function in ceaser n+shift => encrypted text\
+ *      goal: to  a function in ceaser n+shift => encrypted text
  * 
- *      author cryptograghi
+ *      author oliver shwaba
  * 
  */
 
@@ -227,14 +227,14 @@ function unPack(input, MAPSHIFT)
 
 
 /**
- *  function:  boomboom
+ *  function:  BruteForce
  *  purpose: to crack the encryption using all possible matches
  *  
  */
 
 
 
-function BoomBoom(data, shift_limit)
+function BruteForce(data, shift_limit)
 {
     
     console.log("starting the cracking:......................");
@@ -242,10 +242,10 @@ function BoomBoom(data, shift_limit)
     for (let i = 0; i < shift_limit; i++)
     {
         // call the map
-       const BOOM = MapShift(MAP, i);
+       const Maps = MapShift(MAP, i);
        console.log("------------------------------------------");
        console.log("Starting attempt:", i);
-       Guess = unPack(data, BOOM);
+       Guess = unPack(data, Maps);
        list.push(Guess);
        console.log(Guess);
        console.log("Finished attempted:", i)
@@ -265,7 +265,7 @@ function BoomBoom(data, shift_limit)
 
 // tests
  test = Pack("my super secret string", MAPSHIFT);
- BoomBoom(test, 26);
+ BruteForce(test, 26);
 
  /*
   output:
